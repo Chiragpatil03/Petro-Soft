@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<style>
+  div.form{
+    position: absolute;
+    top: 142px;
+    left:0px;
+    background:#d6e6e7;
+    width: 20cm;
+    padding: 10px 20px;
+    
+  }
+  label{
+    width: 140px;
+    display: inline-block;
+    margin: 0.2px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  input{
+    padding: 4px;
+    margin: 5px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid#f9f9f9;
+    width:7cm;
+  }
+    input#submit{
+      margin-top: 7px;
+      color: white;
+      font-weight: bold;
+      padding: 4px;
+      background-color: greenyellow;
+    }
+    input#submit:hover{
+      background-color:red ;
+      color:yellow;
+    }
+    input#reset{
+      margin-top: 7px;
+      color: white;
+      font-weight: bold;
+      padding: 4px;
+      background-color: greenyellow;
+    }
+    input#reset:hover{
+      background-color:red ;
+      color:yellow;
+</style>
+<style>
+	.header{
+    text-transform: capitalize;
+    color: #ffffff;
+    font-size: 45px;
+    position: absolute;
+    top: 0px;
+    left: 67px;
+}
+.logout{
+	position: absolute;
+	right: 95px;
+	top: 15px;
+}
+.name{
+	position: absolute;
+	right: 150px;
+	top: 15px;
+	color:white;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0,0,0,.9);
+}
+.navigation{
+    background-color: #eddc0f;
+    position: absolute;
+    top: 70px;
+    left: 0px;
+    width: 1366px;
+}
+.bg-light {
+    background-color: #529ae1!important;
+}
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    position: absolute;
+    background:#eddc0f;
+}
+.pumplogin{
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  width: 50px;
+}
+#back{
+  width: 100px;
+  height: 100px;
+}
+ .footer-con {
+  background: #007ec3;
+  padding: 8px 0px;
+}
+
+img.back{
+  width: 100px;
+}
+.about{
+    font-size: 20px;
+    background-color:#d6e6e7;
+    text-align: justify;
+    padding: 30px;    
+      }
+.feedimg{
+  position: absolute;
+  right: 150px;
+  top: 250px;
+  
+
+}
+</style>
+
+<div class="top">
+      <img src="E:\PUMP SOFTWARE\topbar-bg.png"style="width:1366px;height: 120px;">
+        <div class="header">
+         Petrol Pump Management System
+        </div>
+            <div class="logout">
+              <a href="file:/E:/PUMP%20SOFTWARE/login.html">
+            <img src="E:\PUMP SOFTWARE\log-out.png"></a>
+            </div>
+            <div class="name">
+            <h9>Welcome OM SAI PETROLEUM DEOLA</h9></div>
+  </div>
+    <div class="navigation">
+    <nav class="navbar navbar-light" style="background-color: #eddc0f;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+     <div class="collapse navbar-collapse" id="navbarNavDropdown">
+       <ul class="navbar-nav">
+          <li class="nav-item active">
+           <a class="nav-link" href="file:/E:/PUMP%20SOFTWARE/home.html">Home<span class="sr-only">(current)</span></a>
+          </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          My account
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Manage Users</a>
+          <a class="dropdown-item" href="#">Manage Empoyee</a>
+          <a class="dropdown-item" href="#">Manage Customer</a>
+          <a class="dropdown-item" href="#">Change Password</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Adminstration
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <a class="dropdown-item" href="#">Add Sale</a>
+        <a class="dropdown-item" href="file:/E:/PUMP%20SOFTWARE/addcustomer.html">Add Customer</a>
+        <a class="dropdown-item" href="file:/E:/PUMP%20SOFTWARE/addemp.html">Add Employee</a>
+        <a class="dropdown-item" href="file:/E:/PUMP%20SOFTWARE/addmachine.html">Add Machine</a>
+        <a class="dropdown-item" href="file:/E:/PUMP%20SOFTWARE/addsuppiler.html">Add Supplier</a>
+        <a class="dropdown-item" href="file:/E:/PUMP%20SOFTWARE/addoil.html">Add Oil Stock</a>
+        
+    </li>
+     <li class="nav-item dropdown">
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <a class="dropdown-item" href="file:/E:/PUMP%20SOFTWARE/custreport.html">Customer report</a>
+        <a class="dropdown-item" href="file:/E:/PUMP%20SOFTWARE/supplier_report.html">Supplier report</a>
+        <a class="dropdown-item" href="file:/E:/PUMP%20SOFTWARE/machine_report.html">Machine report</a>
+        <a class="dropdown-item" href="file:/E:/PUMP%20SOFTWARE/oil_report.html">Oil report</a>
+        <a class="dropdown-item" href="#">Fuel report</a>
+    </li> 
+     <li class="nav-item active">
+        <a class="nav-link" href="#">Help<span class="sr-only">(current)</span></a>
+    </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">About us<span class="sr-only">
+          
+        </span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Feedback<span class="sr-only">(current)</span></a>
+      </li>      
+    </ul>
+  </div>
+</li>
+</div>
+</li>
+</ul>    
+</div>
+</nav>
+</nav>
+</div>
+      <div class="form">
+    <form action="">
+<h2>Feedback</h2><hr>
+<label>User Id:</label>
+  <input type="text" placeholder="Enter User Id"></input><br>
+<label>Pump Email id:</label>
+  <input type="text" placeholder="Enter Email"></input><br>
+<label>How got to know about us:</label>
+<select id="How">
+<option value="Internet">Through Internet</option><br><br>
+<option value="Internet">Anyone suggested</option><br><br>
+<option value="Internet">Self</option><br><br>
+</select>
+<br><label>Any Suggestions:</label><br>
+<textarea name="sugg" rows=5 cols=50> </textarea><br><br>  
+<input type="submit" value="Submit">
+<input type="reset" value="Clear">
+</form>
+</div>
+<div class="feedimg">
+  <img src="feed.jpg">
+</div>
+</div>
+<footer>
+        <div class="footer-con">
+          <h7><center><b><i>Copyright cH!r@g</center></h7></i></b>
+        </div>
+      </footer>
+</body>
+</html>
